@@ -64,3 +64,40 @@ if length < 2:
 else:
     my_list.append(my_list[-1] + my_list[-2])
     print(my_list)
+
+##########################################################################################################
+
+# 5) У вас есть список значений my_list и список индексов my_indexes
+# (начинается с нуля и количество элементов совпадает с количеством в my_list.
+# Распечатать значения из my_list через обращение по индексу.
+
+my_list = list(input("Enter your list:"))
+my_indexes = range(len(my_list))
+
+for index in my_indexes:
+    print(my_list[index])
+
+##########################################################################################################
+
+# 6) У вас есть два списка my_list_1 и my_list_2 равной длинны и
+# список индексов my_indexes (начинается с нуля и количество элементов
+# совпадает с количеством в my_list_1.
+# Распечатать пары значений из my_list_1 и my_list_2 через обращение по индексу.
+
+tmp = True
+
+while tmp:
+
+    my_list_1 = input("Enter you first string:")
+    my_list_2 = input("Enter you second string:")
+
+    if len(my_list_1) > len(my_list_2) or len(my_list_2) > len(my_list_1):
+        print("Your strings must have the similar length.")
+    else:
+        tmp = False
+
+my_indexes = range(len(my_list_1))
+
+for index in my_indexes:
+    print(my_list_1[index] + ', ' + my_list_2[index])
+
