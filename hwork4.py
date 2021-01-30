@@ -101,3 +101,17 @@ my_indexes = range(len(my_list_1))
 for index in my_indexes:
     print(my_list_1[index] + ', ' + my_list_2[index])
 
+##########################################################################################################
+
+# 7) У вас есть строка my_string = '0123456789'.
+# Сгенерировать целые числа (тип int) от 0 до 99 и поместить их в список.
+# Задание нужно выполнить ТОЛЬКО через цикл в цикле(См. пример выше) и приведение типов .
+
+my_string = '0123456789'
+result = []
+
+for symb_1 in my_string:
+    for symb_2 in my_string:
+        result.append(symb_1 + symb_2)
+
+print(result)
